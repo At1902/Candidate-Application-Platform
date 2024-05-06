@@ -1,8 +1,10 @@
+import JobList from "@components/JobList";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       Candidate Application Platform
+      <JobList />
     </main>
   );
 }

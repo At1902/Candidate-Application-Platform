@@ -1,0 +1,10 @@
+.jobList h2 {
+  margin-bottom: 1rem;
+}
+
+.noResultText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
