@@ -1,5 +1,7 @@
 .listingTitle {
   margin-bottom: 1rem;
+  padding: 8px 0;
+  font-weight: 400;
 }
 
 .noResultText {
