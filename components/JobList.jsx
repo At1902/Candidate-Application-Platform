@@ -2,9 +2,12 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { fetchJobs } from "../redux/actions";
+import { fetchJobs } from "@redux/actions";
 import { CircularProgress, Grid } from "@mui/material";
-import style from "../styles/JobList.module.css";
+import style from "@styles/JobList.module.css";
+import JobCard from "./JobCard";
+
+// Later I will implement custom(in-house) infinite scroll using Intersection Observer API
 
 const JobList = () => {
   const dispatch = useDispatch();
@@ -37,7 +40,7 @@ const JobList = () => {
         <Grid container spacing={4} rowGap={3}>
           {jobs.map((job, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              {job.companyName}
+              <JobCard key={index} job={job} />
             </Grid>
           ))}
         </Grid>
