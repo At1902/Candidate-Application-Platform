@@ -1,0 +1,42 @@
+.jobCard {
+  height: 100% !important;
+  position: relative !important;
+  border-radius: 20px !important;
+  padding: 5px !important;
+}
+
+.infoBox img {
+  width: 50px;
+  height: 3rem;
+  background-color: #2d2f31;
+}
+
+.infoContainer p {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.infoMainDiv h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  color: #8b8b8b;
+  margin: 0;
+}
+
+.infoMainDiv h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.applyBtn {
+  width: 100%;
+  background-color: rgb(53, 240, 187);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 8px 18px;
+}
