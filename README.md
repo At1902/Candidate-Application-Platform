@@ -7,6 +7,9 @@ A candidate application platform that enables users to browse and filter jobs ba
 - Infinite scroll to load additional jobs automatically as the user scrolls down the page.
 - Responsive design for compatibility with different screen sizes, including mobile devices.
 
+### Demo and explanation Video:
+I have created a short video in which I explain the code and demonstrate the live web app for your convenience. Here is the link to the quick and concise demo and explanation video:: [{Demo video}](https://www.loom.com/share/6cbeb77aa30b4907bf09182df0dff027?sid=fb057389-e1b9-474a-9a10-a229b238e36a)
+
 ### Production Link:
 Deployed on Vercel: [https://custom-video-player-with-playlist.vercel.app](https://candidate-application-platform-7lpa0vn4h-atishays-projects.vercel.app)
 
