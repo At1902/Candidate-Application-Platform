@@ -34,8 +34,11 @@ const JobCard = ({ job }) => {
 
   return (
     <div id={jdUid}>
-      <Card sx={{ maxWidth: "360px" }} className={style.jobCard}>
-        <CardContent>
+      <Card
+        sx={{ maxWidth: "360px", minHeight: "390px", display: "flex" }}
+        className={style.jobCard}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column" }}>
           <Box gap="0.75rem" display="flex" className={style.infoBox}>
             {/* Optimization: Lazy Loading */}
             <Image
@@ -64,9 +67,9 @@ const JobCard = ({ job }) => {
           {jobDetailsFromCompany && (
             <Box>
               <Typography
-                variant="h5"
+                variant="h1"
                 component="h2"
-                sx={{ fontSize: "16px", lineHeight: "1.5", fontWeight: "600" }}
+                sx={{ fontSize: "16px", lineHeight: "1.5", fontWeight: "500" }}
               >
                 Job Description:
               </Typography>
@@ -125,7 +128,12 @@ const JobCard = ({ job }) => {
             </Typography>
           )}
 
-          <a href={jdLink || "#"} target="_blank" rel="noopener noreferrer">
+          <a
+            className={style.applyLink}
+            href={jdLink || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               className={style.applyBtn}
               sx={{
