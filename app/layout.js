@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Candidate Application Platform",
-  description: "Browse job listings, filter by criteria, and enjoy infinite scroll for seamless navigation.",
+  description:
+    "Browse job listings, filter by criteria, and enjoy infinite scroll for seamless navigation.",
 };
 
 export default function RootLayout({ children }) {
