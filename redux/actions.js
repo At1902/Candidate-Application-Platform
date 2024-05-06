@@ -3,6 +3,7 @@ import {
   fetchJobsRequest,
   fetchJobsSuccess,
   fetchJobsFailure,
+  updateFilters,
 } from "./jobSlice";
 
 export const fetchJobs = (limit, offset) => {
@@ -18,3 +19,5 @@ export const fetchJobs = (limit, offset) => {
     }
   };
 };
+
+export { updateFilters };
